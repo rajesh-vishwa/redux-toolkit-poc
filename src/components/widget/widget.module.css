@@ -1,0 +1,56 @@
+.cardItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+}
+
+.card_body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 0.55rem;
+  line-height: normal;
+}
+
+.card_body::after,
+::before {
+  box-sizing: border-box;
+}
+
+.card_title {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.card_text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.card_text p ::after,
+::before {
+  box-sizing: border-box;
+}
+
+.card_img,
+.card_img_top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card_span{
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.card_close{
+    height: 25px;
+    width: 25px;
+}
